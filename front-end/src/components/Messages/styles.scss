@@ -1,0 +1,23 @@
+@use 'src/styles/vars';
+
+.messages {
+  padding: vars.$gutter;
+  overflow: auto;
+}
+
+.message {
+  margin-bottom: vars.$gutter * 2;
+  font-size: .8em;
+  &__author {
+    margin-left: vars.$gutter;
+    margin-bottom: vars.$gutter / 2;
+  }
+  &__content {
+    display: inline-block;
+    background-color: vars.$color-light;
+    color: vars.$color-alt;
+    padding: vars.$gutter;
+    // ©Thomas-C
+    border-radius:  20px 0 20px 20px;
+  }
+}

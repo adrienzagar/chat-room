@@ -1,0 +1,15 @@
+@use 'src/styles/vars';
+
+.form {
+  display: flex;
+  &__input {
+    flex: 1;
+    border: none;
+    padding: vars.$gutter * 1.5;
+    font-size: 1.5em;
+  }
+  &__button {
+    width: 100px;
+    border: none;
+  }
+}

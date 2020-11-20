@@ -1,0 +1,12 @@
+@use 'src/styles/vars';
+
+.chatroom {
+  width: 90%;
+  max-width: 600px;
+  background-color: vars.$color-chatroom-background;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

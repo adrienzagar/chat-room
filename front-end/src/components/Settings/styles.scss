@@ -1,0 +1,41 @@
+@use 'src/styles/vars';
+
+.settings {
+  position: fixed;
+  right: 0;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  transition: transform .3s ;
+  transform: translateX(250px);
+  &--open {
+    transform: translateX(0);
+    .settings__toggler {
+      transform: rotate(45deg);
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+  &__toggler {
+    transform: rotate(0);
+    border: none;
+    border-radius: 3em;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    margin-right: vars.$gutter;
+    color: vars.$color-alt;
+    font-weight: bold;
+  }
+  &__submit {
+    background-color: vars.$color-alt;
+    color: vars.$color-light;
+    border: none;
+    border-radius: 10px;
+    padding: vars.$gutter / 2;
+    font-weight: bold;
+  }
+}
